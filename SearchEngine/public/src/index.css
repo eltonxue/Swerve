@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    min-height: 80%;
+    min-width: 300px;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 > span {
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#search-engine-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('background.jpg')
+}
+
+#title {
+  color: black;
+  letter-spacing: 8px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 80px;
+  margin-bottom: 20px;
+  margin-top: 200px;
+}
+
+#title > span {
+  color: #5ED2F8;
+}
+
+#search-container {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#search-input {
+  border: 1px solid lightgrey;
+  font-size: 20px;
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-results {
+  display: none;
+  width: 80%;
+  padding-left: 0px;
+  padding: 15px;
+  margin-top: 0px;
+}
+
+#search-results > li {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: 5px 5px 5px grey;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  word-break: break-all;
+}
+
+#search-results > li:hover {
+  box-shadow: 5px 5px 5px #5ED2F8;
+}
+
+#search-info-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#search-info-container > h3 {
+  margin: 2px;
+}
+
+#search {
+  font-size: 20px;
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+
+.fa-search {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.fa-search:hover {
+  cursor: pointer;
+  color: #5ED2F8;
+}
+
+.loader {
+    border: 4px solid black; /* Light grey */
+    border-top: 4px solid #5ED2F8;
+    border-bottom: 4px solid #5ED2F8;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin-left: 15px;
+    display: none;
+}
+
+.loader-big {
+  margin-top: 100px;
+  border: 20px solid black; /* Light grey */
+  border-top: 20px solid #5ED2F8;
+  border-bottom: 20px solid #5ED2F8;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 0px;
+}
+
+#search-loading {
+  display: none;
+  text-align: center;
+  padding-left: 5px !important;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Yanone+Kaffeesatz" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  </head>
+  <body id="search-engine-container">
+    <h1 id="title">Swer<span>V</span>e</h1>
+
+    <div id="search-container">
+      <input id="search-input" placeholder='Enter a search term...'/>
+      <i id="search-button" class="fas fa-search"></i>
+      <div class="loader"></div>
+    </div>
+    <div id="search-loading">
+      <div class="loader loader-big"></div>
+      <h3>Please wait...</h3>
+    </div>
+    <ul id="search-results">
+      <div id="search-info-container">
+        <h3 id="search">Search results for : <span id="search-term">informatics</span></h3>
+        <h3>URLs Found : <span id="urls-found">6090</span></h3>
+        <h3>Total Unique Tokens : <span id="total-tokens">43111</span></h3>
+        <h3>Total Documents Searched: <span id="total-documents">98541</span></h3>
+      </div>
+      <li>
+        <h3>URL: <a href="https://www.google.com">www.google.com</a></h3>
+        <h3>Term Frequency: <span>43113</span></h3>
+        <h3>TF-IDF: <span>3.11</span></h3>
+      </li>
+    </ul>
+  </body>
+
+
+  <footer>
+    <script src="index.js"></script>
+  </footer>
+</html>
